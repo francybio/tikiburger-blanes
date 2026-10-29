@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TikiBurger · Burgers, tapas y cócteles tiki en Blanes</title>
+<meta name="description" id="metaDesc" content="TikiBurger, en el Kalúa Lounge Bar de la Avinguda del Mediterrani 5 de Blanes, a un paso de la playa: burgers de pan brioche desde 3,50 €, tapas, cócteles tiki, cerveza Estrella Galicia de bodega y un local ambientado en la Polinesia. Tel. 972 91 66 10.">
+<meta name="theme-color" content="#121318">
+<meta property="og:title" content="TikiBurger · Blanes">
+<meta property="og:description" content="Más tiki, más burger. Burgers, tapas y cócteles tiki a un paso de la playa de Blanes.">
+<meta property="og:image" content="assets/img/sala.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121318'/%3E%3Crect x='16' y='12' width='32' height='42' rx='8' fill='%23F3EAD8'/%3E%3Ccircle cx='26' cy='28' r='5' fill='%23E85A3A'/%3E%3Ccircle cx='38' cy='28' r='5' fill='%23E85A3A'/%3E%3Crect x='22' y='40' width='20' height='7' rx='3' fill='%23E85A3A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#inici" aria-label="TikiBurger, inicio" data-i18n-attr="aria-label:nav.home"><span class="logo__t">Tiki</span><span class="logo__b">Burger</span><small>Copes i tapes</small></a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#burgers" data-i18n="nav.burgers">Burgers</a>
+    <a href="#tragaperras" data-i18n="nav.slot">Tragaperras</a>
+    <a href="#carta" data-i18n="nav.carta">Carta</a>
+    <a href="#coctels" data-i18n="nav.coctels">Cócteles</a>
+    <a href="#local" data-i18n="nav.local">El local</a>
+    <a href="#visita" data-i18n="nav.visita">Visita</a>
+  </nav>
+  <div class="lang" data-lang-switch></div>
+  <a class="nav__call" href="tel:+34972916610"><i class="ph-bold ph-phone"></i><span>972 91 66 10</span></a>
+  <button class="burger" id="burgerBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú" data-i18n-attr="aria-label:nav.menu"><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#burgers" data-i18n="nav.burgers">Burgers</a><a href="#tragaperras" data-i18n="nav.slot">Tragaperras</a><a href="#carta" data-i18n="nav.carta">Carta</a><a href="#coctels" data-i18n="nav.coctels">Cócteles</a><a href="#local" data-i18n="nav.local">El local</a><a href="#visita" data-i18n="nav.visita">Visita</a>
+  <a class="drawer__call" href="tel:+34972916610">972 91 66 10</a>
+  <div class="langs" data-lang-list></div>
+</div>
+
+<main>
+  <!-- ============ PORTADA · el tiki que mira ============ -->
+  <section class="hero" id="inici">
+    <img class="hero__bg" src="assets/img/sostre.jpg" alt="" aria-hidden="true">
+    <svg class="leaves" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="#1C5E44"><path d="M-40 120c160-40 300 10 380 120-120-30-260-10-380 60z"/><path d="M-60 360c140-90 300-90 420 0-140-10-280 30-420 120z"/><path d="M1480 80c-170-30-310 30-380 150 120-40 260-20 380 40z"/><path d="M1500 420c-140-100-300-100-430-10 140 0 290 40 430 130z"/></g>
+      <g fill="#24785A"><path d="M-30 220c120 0 230 50 280 150-110-40-200-40-300 0z"/><path d="M1470 260c-130-10-240 40-300 130 110-30 210-30 310 10z"/></g>
+    </svg>
+    <div class="hero__in">
+      <div class="hero__txt">
+        <p class="kicker" data-i18n="hero.kicker">Copes i tapes · Kalúa Lounge Bar · Blanes</p>
+        <h1 class="hero__title"><span class="sr-only" data-i18n="hero.h1">TikiBurger, burgers, tapas y cócteles tiki en Blanes</span><span aria-hidden="true" class="hero__s1" data-i18n="hero.s1">Más tiki,</span><span aria-hidden="true" class="hero__s2" data-i18n="hero.s2">más burger.</span></h1>
+        <p class="hero__lead" data-i18n="hero.lead"></p>
+        <div class="hero__meta">
+          <p class="stars" data-i18n="hero.rating"><b>4,3</b> ★ · 1.280 opiniones en Google</p>
+          <p class="live" data-live><span class="live__dot"></span><span data-live-text></span></p>
+        </div>
+        <div class="ctas">
+          <a class="btn btn--hot" href="#burgers"><span data-i18n="hero.cta1">Ver las burgers</span><i class="ph-bold ph-arrow-down"></i></a>
+          <a class="btn btn--line" href="tel:+34972916610"><i class="ph-bold ph-phone"></i><span data-i18n="hero.cta2">Llamar</span></a>
+        </div>
+      </div>
+      <div class="tiki" id="tiki">
+        <svg viewBox="0 0 400 480" aria-hidden="true">
+          <g class="tiki__fire">
+            <path class="f1" d="M70 300C20 230 60 150 40 80c50 40 70 70 80 120 10-60 40-100 30-170 60 60 70 120 60 190z"/>
+            <path class="f2" d="M330 300c50-70 10-150 30-220-50 40-70 70-80 120-10-60-40-100-30-170-60 60-70 120-60 190z"/>
+            <path class="f3" d="M200 120c-30-40-10-80 0-110 30 40 40 70 20 110z"/>
+          </g>
+          <rect class="tiki__wood" x="90" y="90" width="220" height="330" rx="48"/>
+          <path class="tiki__grain" d="M110 140c40 10 60-10 100 0s60 10 80 0M110 380c40-10 70 10 100 0s50-10 80 0"/>
+          <path class="tiki__brow" d="M110 175c30-30 70-30 90 0 20-30 60-30 90 0v20c-30-20-70-20-90 0-20-20-60-20-90 0z"/>
+          <g class="tiki__eye"><circle cx="150" cy="225" r="34" class="tiki__white"/><circle class="tiki__pupil" id="pupilL" cx="150" cy="225" r="13"/></g>
+          <g class="tiki__eye"><circle cx="250" cy="225" r="34" class="tiki__white"/><circle class="tiki__pupil" id="pupilR" cx="250" cy="225" r="13"/></g>
+          <path class="tiki__nose" d="M200 240c-14 30-26 46-26 58 0 10 12 14 26 14s26-4 26-14c0-12-12-28-26-58z"/>
+          <path class="tiki__mouth" d="M120 335c20 40 140 40 160 0z"/>
+          <path class="tiki__teeth" d="M135 338h130M150 338v14M170 338v18M190 338v20M210 338v20M230 338v18M250 338v14"/>
+          <path class="tiki__tongue" d="M190 352c0 22 6 34 14 34s14-12 14-34z"/>
+        </svg>
+        <p class="tiki__hint" data-i18n="hero.mask">Mueve el ratón: el tiki te mira</p>
+      </div>
+    </div>
+    <ol class="how">
+      <li><i class="ph-bold ph-hand-pointing"></i><span data-i18n="how.1">Pide en la barra</span></li>
+      <li><i class="ph-bold ph-credit-card"></i><span data-i18n="how.2">Paga allí mismo</span></li>
+      <li><i class="ph-bold ph-hamburger"></i><span data-i18n="how.3">Te lo llevan a la mesa</span></li>
+    </ol>
+  </section>
+
+  <!-- ============ BURGERS ============ -->
+  <section class="burgers" id="burgers">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="bu.kicker">Burgers · pan brioche</p>
+        <h2 class="h2" data-i18n="bu.title">Ocho burgers, <em>capa a capa</em></h2>
+        <p class="lead" data-i18n="bu.lead"></p>
+      </div>
+      <div class="bgrid" id="bgrid"></div>
+      <p class="extras" data-i18n="bu.extras"></p>
+    </div>
+  </section>
+
+  <!-- ============ TRAGAPERRAS ============ -->
+  <section class="slot" id="tragaperras">
+    <div class="wrap slot__grid">
+      <div>
+        <p class="kicker" data-i18n="sl.kicker">La tragaperras tiki</p>
+        <h2 class="h2" data-i18n="sl.title">Que elijan <em>los tikis</em></h2>
+        <p class="lead" data-i18n="sl.lead"></p>
+      </div>
+      <div class="machine">
+        <div class="machine__top"><span>TIKI</span><span class="machine__lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="reels" id="reels">
+          <div class="reel" data-reel="0"><p class="reel__h" data-i18n="sl.r1">Burger</p><div class="reel__win"><div class="reel__strip"></div></div></div>
+          <div class="reel" data-reel="1"><p class="reel__h" data-i18n="sl.r2">Tapa</p><div class="reel__win"><div class="reel__strip"></div></div></div>
+          <div class="reel" data-reel="2"><p class="reel__h" data-i18n="sl.r3">Cóctel</p><div class="reel__win"><div class="reel__strip"></div></div></div>
+        </div>
+        <div class="machine__out" aria-live="polite"><p id="slotMsg" data-i18n="sl.idle">Tira de la palanca para empezar</p><p class="machine__total" id="slotTotal"></p></div>
+        <button class="lever" id="lever" type="button" aria-label="Tirar de la palanca" data-i18n-attr="aria-label:sl.pull"><span class="lever__ball"></span><span class="lever__bar"></span></button>
+        <button class="btn btn--hot machine__btn" id="leverBtn" type="button"><i class="ph-bold ph-arrow-fat-down"></i><span data-i18n="sl.pull">Tirar de la palanca</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTA ============ -->
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="ca.kicker">La carta</p>
+        <h2 class="h2" data-i18n="ca.title">Tapas, bocadillos <em>y postres</em></h2>
+        <p class="lead" data-i18n="ca.lead"></p>
+      </div>
+      <div class="cards" id="cards"></div>
+      <p class="note" data-i18n="ca.note"></p>
+    </div>
+  </section>
+
+  <!-- ============ CÓCTELES ============ -->
+  <section class="coctels" id="coctels">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="co.kicker">Cócteles</p>
+        <h2 class="h2" data-i18n="co.title">De la isla <em>a la barra</em></h2>
+        <p class="lead" data-i18n="co.lead"></p>
+      </div>
+      <div class="glasses" id="glasses"></div>
+      <div class="combi"><p class="combi__h" data-i18n="co.combi">Combinados</p><ul id="combi"></ul></div>
+    </div>
+    <canvas class="lava" id="lava" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- ============ EL LOCAL ============ -->
+  <section class="local" id="local">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="lo.kicker">El local</p>
+        <h2 class="h2" data-i18n="lo.title">Una isla en la <em>Avinguda del Mediterrani</em></h2>
+        <p class="lead" data-i18n="lo.lead"></p>
+      </div>
+      <div class="mosaic">
+        <figure class="m m--a reveal"><img src="assets/img/sala.jpg" alt="" data-i18n-attr="alt:lo.c1" loading="lazy"><figcaption data-i18n="lo.c1"></figcaption></figure>
+        <figure class="m m--b reveal"><img src="assets/img/sostre.jpg" alt="" data-i18n-attr="alt:lo.c2" loading="lazy"><figcaption data-i18n="lo.c2"></figcaption></figure>
+        <figure class="m m--c reveal"><img src="assets/img/totem.jpg" alt="" data-i18n-attr="alt:lo.c3" loading="lazy"><figcaption data-i18n="lo.c3"></figcaption></figure>
+        <figure class="m m--d reveal"><img src="assets/img/estrella.jpg" alt="" data-i18n-attr="alt:lo.c4" loading="lazy"><figcaption data-i18n="lo.c4"></figcaption></figure>
+        <figure class="m m--e reveal"><img src="assets/img/barra.jpg" alt="" data-i18n-attr="alt:lo.c5" loading="lazy"><figcaption data-i18n="lo.c5"></figcaption></figure>
+        <figure class="m m--f reveal"><img src="assets/img/platja.jpg" alt="" data-i18n-attr="alt:lo.c6" loading="lazy"><figcaption data-i18n="lo.c6"></figcaption></figure>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote reveal"><p data-i18n="q.1"></p><cite data-i18n="q.src"></cite></blockquote>
+        <blockquote class="quote reveal"><p data-i18n="q.2"></p><cite data-i18n="q.src"></cite></blockquote>
+      </div>
+      <div class="strip" id="strip"></div>
+      <div class="mid">
+        <figure class="mid__vid reveal"><video id="midVid" src="assets/video/llobarro.mp4" poster="assets/video/llobarro-poster.jpg" muted loop playsinline preload="metadata" aria-label="Lubina del menú" data-i18n-attr="aria-label:lo.vid"></video><figcaption data-i18n="lo.vid"></figcaption></figure>
+        <div>
+          <p class="kicker" data-i18n="lo.mid">A mediodía</p>
+          <h3 class="h3" data-i18n="lo.midT">También hay <em>menú</em></h3>
+          <p data-i18n="lo.midL"></p>
+          <div class="mid__pics" id="midPics"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <div class="wrap visita__grid">
+      <div>
+        <p class="kicker" data-i18n="vis.kicker">Visita</p>
+        <h2 class="h2" data-i18n="vis.title">Ven a la <em>isla</em></h2>
+        <p class="visita__addr" data-i18n="vis.addr">Avinguda del Mediterrani, 5<br>17300 Blanes (Girona)</p>
+        <p class="visita__sub" data-i18n="vis.sub"></p>
+        <p class="live" data-live><span class="live__dot"></span><span data-live-text></span></p>
+        <div class="ctas">
+          <a class="btn btn--hot" href="tel:+34972916610"><i class="ph-bold ph-phone"></i><span data-i18n="vis.call">Llamar</span> · 972 91 66 10</a>
+          <a class="btn btn--line" href="https://maps.google.com/?cid=9296690393057227617" target="_blank" rel="noopener"><i class="ph-bold ph-navigation-arrow"></i><span data-i18n="vis.maps">Abrir en Google Maps</span></a>
+        </div>
+        <figure class="facade"><img src="assets/img/facana360.jpg" alt="Kalúa Lounge Bar, Avinguda del Mediterrani 5" loading="lazy"></figure>
+      </div>
+      <div class="hours">
+        <p class="hours__h" data-i18n="vis.hours">Horario</p>
+        <ul class="hours__list" id="hoursList"></ul>
+        <p class="hours__note" data-i18n="vis.season"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot__big" aria-hidden="true"><span>Tiki</span>Burger</p>
+  <div class="foot__row">
+    <span>TikiBurger · Kalúa Lounge Bar · Avinguda del Mediterrani, 5 · 17300 Blanes · <a href="tel:+34972916610">972 91 66 10</a></span>
+    <span data-i18n="foot.photos"></span>
+    <div class="langs" data-lang-list></div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="lb__x" type="button" id="lbX" aria-label="Cerrar" data-i18n-attr="aria-label:lb.close"><i class="ph-bold ph-x"></i></button>
+  <figure class="lb__fig"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="carta.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
